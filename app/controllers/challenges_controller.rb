@@ -14,7 +14,7 @@ class ChallengesController < ApplicationController
 
   # GET /challenges/new
   def new
-    @challenge = Challenge.new
+    @challenge = Challenge.new(user_id: params[:user_id])
   end
 
   # GET /challenges/1/edit
@@ -25,6 +25,8 @@ class ChallengesController < ApplicationController
   # POST /challenges.json
   def create
     @challenge = Challenge.new(challenge_params)
+    @challenge.user_id = current_user.id
+
 
     respond_to do |format|
       if @challenge.save
