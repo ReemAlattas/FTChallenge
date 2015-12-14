@@ -1,2 +1,233 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">FT</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#how">How?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#what">What?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+        
+        <!-- Header -->
+        <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in" style="visibility:hidden;">Welcome To Our Studio!</div>
+                <div class="intro-heading" style="visibility:hidden;">It's Nice To Meet You</div>
+                <a href="#services" class="page-scroll btn btn-xl" style="visibility:hidden;">Tell Me More</a>
+            </div>
+        </div>
+        </header>
+        <!-- Header -->
+        
+        <!-- Video -->
+        <section class="main-row">
+            <div class="container">
+                <div class="fullscreen-bg">
+                    <%= video_tag "FTChallenge2.mp4", class: "fullscreen-bg__video", :autoplay => true, :loop => true, :autobuffer => true %>
+                </div>
+            </div>
+        </section>
+        <!-- video -->
+        
+        <!-- List -->
+        <!-- Featured Workout -->
+        <section id="how" class="how">
+            <div class="container">
+                <div class="row workout-featured">
+                    <div class="col-md-1">
+                        </div>
+                    <div class="col-md-4">
+                        <div class="section-title-before">featured</div>
+                        <h2 class="section-title">Challenge of the Week</h2>
+                        <p><div class="section-desc">
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/oGYVkTjCo7I" frameborder="0" allowfullscreen></iframe>
+                        </div></p>
+                        <p align="center">
+                            <a href="#what" class="btn btn-transparent2"><span>VIEW ALL CHALLENGES</span></a>
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="workout-exercises">
+                            <li>
+                                <h4>Choose a Challenge - <i class="fa fa-hand-o-up"></i></h4>
+                            </li>
+                            <li>
+                                <h4>Record - <i class="fa fa-video-camera"></i></h4>
+                            </li>
+                            <li>
+                                <h4>Upload - <i class="fa fa-upload"></i></h4>
+                            </li>
+                            <li>
+                                <h4>Give Friends - <i class="fa fa-users"></i></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ Featured Workout -->
+        <!-- List -->
+    
+        <!-- Motivation -->
+        <section class="motiv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" >
+                        <h2>If it doesn't <span style="color:#d34d5e">CHALLENGE</span> you</h2>
+                        <h2>It doesn't <span style="color:#d34d5e">CHANGE</span> you</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Motivation -->
+    
+            <!-- Workout -->
+        <section id="what" class="what">
+            <div class="container">
+                <div class="row workout-featured">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title-before">all</div>
+                        <h2 class="section-title">Challenges</h2>
+                        <p class="text-muted">Do any variation of the below exercises for a certain amount of time or a certain number of reps!</p>
+                        <div class="section-desc">
+                            <div class="row text-center">
+                <div class="col-md-4">
+                    <%= image_tag("pushup_.gif", class: "img-rounded", :width => "75%", :height => "140") %>
+                    <h4 class="service-heading">Push Up Challenge</h4>
+                    <a href="#" class="btn btn-transparent"><span>ACCEPT!</span></a>
+                </div>
+                <div class="col-md-4">
+                    <%= image_tag("plank.gif", class: "img-rounded", :width => "75%", :height => "140") %>
+                    <h4 class="service-heading">Plank Challenge</h4>
+                    <a href="#" class="btn btn-transparent"><span>ACCEPT!</span></a>
+                </div>
+                <div class="col-md-4">
+                    <%= image_tag("squat_.gif", class: "img-rounded", :width => "75%", :height => "140") %>
+                    <h4 class="service-heading">Squat Challenge</h4>
+                    <a href="#" class="btn btn-transparent"><span>ACCEPT!</span></a>
+                </div>
+            </div>
+                            
+            <!-- 2nd row -->                
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <%= image_tag("benchPress_.gif", class: "img-rounded", :width => "75%", :height => "140") %>
+                    <h4 class="service-heading">Bench Press Challenge</h4>
+                    <a href="#" class="btn btn-transparent"><span>ACCEPT!</span></a>
+                </div>
+                <div class="col-md-4">
+                    <%= image_tag("deadlift_.gif", class: "img-rounded", :width => "75%", :height => "140") %>
+                    <h4 class="service-heading">Deadlift Challenge</h4>
+                    <a href="#" class="btn btn-transparent"><span>ACCEPT!</span></a>
+                </div>
+                <div class="col-md-4">
+                    <%= image_tag("yours_.gif", class: "img-rounded", :width => "75%", :height => "140") %>
+                    <h4 class="service-heading">Your Own Challenge</h4>
+                    <a href="#" class="btn btn-transparent"><span>CREATE!</span></a>
+                </div>
+            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ Workout -->
+        
+    <!-- motiv 2 -->
+    <section class="motiv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" >
+                        <h2><span style="color:#d34d5e">CHALLENGE</span> ACCEPTED!</h2>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <!-- motiv 2 -->
+    
+    <!-- contact -->
+    <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <h4 align="center">
+    <a href="https://www.facebook.com/FitnessTransformer" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com/FitTransformer" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com/FitnessTransformer/" target="_blank"><i id="social-ig" class="fa fa-instagram fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://plus.google.com/113138464553577536707/" target="_blank"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;
+    <a href="mailto:fitnesstransformer@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </h4>
+                </div>
+    </div>
+    </section>
+    <!-- contact -->
+    
+    <!-- footer -->
+    <section class="footer">
+            <div class="container">
+                <div class="row workout-featured">
+                    <div class="col-lg-12 text-center">
+                        
+                    <p>
+                        <a class="page-scroll" href="#how">How?</a> | 
+                    
+                        <a class="page-scroll" href="#what">What?</a> | 
+                  
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </p>
+                        <p><a class="page-scroll" href="http://fitnesstransformer.com/" target="_blank">-- FitnessTransformer Product --</a></p>
+                        <p><span class="copyright">Copyright &copy; Reem Alattas 2015</span></p>
+                
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- footer -->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>

@@ -1,0 +1,468 @@
+/* Page Title, Section Title */
+.page-title-before,
+.section-title-before {
+  font-size: 16px;
+  font-weight: 700;
+  color: #d34d5e;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.page-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 90px;
+}
+
+/* Featured Workout */
+/*-----------------------------------*/
+
+ul { 
+    list-style: none; 
+}
+
+.workout-featured .section-desc p {
+  font-size: 17px;
+}
+.workout-featured img.man {
+  position: absolute;
+  top: -130px;
+  left: -130px;
+  max-width: none;
+}
+.workout-featured .workout-exercises {
+  margin-top: 40px;
+}
+.workout-featured .workout-exercises li {
+  position: relative;
+  padding: 8px 0 22px 210px;
+}
+.workout-featured .workout-exercises li h4 {
+  font-weight: 400;
+}
+.workout-featured .workout-exercises li:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d34d5e;
+  border-radius: 50%;
+  font-size: 17px;
+  color: #d34d5e;
+  line-height: 36px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 75px;
+}
+.workout-featured .workout-exercises li:nth-child(1):before {
+  content: '1';
+}
+.workout-featured .workout-exercises li:nth-child(2):before {
+  content: '2';
+}
+.workout-featured .workout-exercises li:nth-child(3):before {
+  content: '3';
+}
+.workout-featured .workout-exercises li:nth-child(4):before {
+  content: '4';
+}
+.workout-featured .workout-exercises li:nth-child(5):before {
+  content: '5';
+}
+.workout-featured .workout-exercises li:nth-child(6):before {
+  content: '6';
+}
+.workout-featured .workout-exercises li:nth-child(7):before {
+  content: '7';
+}
+.workout-featured .workout-exercises li:nth-child(8):before {
+  content: '8';
+}
+.workout-featured .workout-exercises li:nth-child(9):before {
+  content: '9';
+}
+.workout-featured .workout-exercises li:nth-child(10):before {
+  content: '10';
+}
+.workout-featured .workout-exercises li:after {
+  content: '';
+  width: 2px;
+  background-color: #d34d5e;
+  position: absolute;
+  top: 40px;
+  left: 94px;
+  bottom: 0;
+}
+.workout-featured .workout-exercises li:last-child {
+  padding-bottom: 0;
+}
+.workout-featured .workout-exercises li:last-child:after {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .workout-featured img.man {
+    top: -100px;
+  }
+  .workout-featured .section-title {
+    font-size: 29px;
+  }
+}
+@media (max-width: 991px) {
+  .workout-featured img.man {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .workout-featured .section-desc p {
+    font-size: 15px;
+  }
+  .workout-featured .workout-exercises li {
+    padding: 8px 0 10px 64px;
+  }
+  .workout-featured .workout-exercises li h4 {
+    font-size: 20px;
+  }
+  .workout-featured .workout-exercises li:before {
+    left: 0;
+  }
+  .workout-featured .workout-exercises li:after {
+    left: 19px;
+  }
+}
+@media (max-width: 479px) {
+  .workout-featured .section-title {
+    font-size: 22px;
+  }
+  .workout-featured .section-desc p {
+    font-size: 13px;
+  }
+}
+
+/*-----------------------------------*/
+/* Buttons */
+/*-----------------------------------*/
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  background-color: transparent;
+  outline: none;
+}
+.btn.active,
+.btn:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  vertical-align: top;
+}
+.btn span,
+.btn input {
+  display: block;
+  width: 100%;
+  padding: 0 26px;
+  height: 56px;
+  line-height: 52px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 2px solid #00c8d6;
+  border-radius: 0;
+  background-color: #00c8d6;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.btn i {
+  font-size: 200%;
+  vertical-align: middle;
+  margin-right: .2em;
+}
+.btn.btn-padding-big span,
+.btn.btn-padding-big input {
+  padding: 0 60px;
+}
+.btn.btn-small span,
+.btn.btn-small input {
+  height: 42px;
+  line-height: 38px;
+  font-size: 13px;
+}
+.btn.btn-big span,
+.btn.btn-big input {
+  height: 74px;
+  line-height: 70px;
+  font-size: 20px;
+  padding: 0 50px;
+}
+.btn.btn-full span,
+.btn.btn-full input {
+  padding: 0 5px;
+}
+.btn.btn-transparent span,
+.btn.btn-transparent input {
+  color: #00c8d6;
+  background-color: transparent;
+  margin-bottom:30px;
+}
+.btn.btn-transparent2 span,
+.btn.btn-transparent2 input {
+  color: #00c8d6;
+  background-color: transparent;
+}
+.btn.btn-full {
+  display: block;
+}
+.btn:active,
+.btn.active {
+  top: 2px;
+}
+.btn:hover span,
+.btn:hover input,
+.btn:active span,
+.btn:active input,
+.btn.hover span,
+.btn.hover input,
+.btn.active span,
+.btn.active input {
+  background-color: transparent;
+  color: #00c8d6;
+}
+.btn.btn-transparent:hover span,
+.btn.btn-transparent:hover input,
+.btn.btn-transparent:active span,
+.btn.btn-transparent:active input,
+.btn.btn-transparent.hover span,
+.btn.btn-transparent.hover input,
+.btn.btn-transparent.active span,
+.btn.btn-transparent.active input {
+  background-color: #00c8d6;
+  color: #ffffff;
+}
+.btn.btn-black span,
+.btn.btn-black input {
+  background-color: #291c1c;
+  border-color: #291c1c;
+  color: #ffffff;
+}
+.btn.btn-black.btn-transparent span,
+.btn.btn-black.btn-transparent input {
+  background-color: transparent;
+  color: #291c1c;
+}
+.btn.btn-black:hover span,
+.btn.btn-black:hover input,
+.btn.btn-black:active span,
+.btn.btn-black:active input,
+.btn.btn-black.hover span,
+.btn.btn-black.hover input,
+.btn.btn-black.active span,
+.btn.btn-black.active input {
+  background-color: transparent;
+  color: #291c1c;
+}
+.btn.btn-black.btn-transparent:hover span,
+.btn.btn-black.btn-transparent:hover input,
+.btn.btn-black.btn-transparent:active span,
+.btn.btn-black.btn-transparent:active input,
+.btn.btn-black.btn-transparent.hover span,
+.btn.btn-black.btn-transparent.hover input,
+.btn.btn-black.btn-transparent.active span,
+.btn.btn-black.btn-transparent.active input {
+  background-color: #291c1c;
+  color: #ffffff;
+}
+.btn.btn-red span,
+.btn.btn-red input {
+  background-color: #d34d5e;
+  border-color: #d34d5e;
+  color: #ffffff;
+}
+.btn.btn-red.btn-transparent span,
+.btn.btn-red.btn-transparent input {
+  background-color: transparent;
+  color: #d34d5e;
+}
+.btn.btn-red:hover span,
+.btn.btn-red:hover input,
+.btn.btn-red:active span,
+.btn.btn-red:active input,
+.btn.btn-red.hover span,
+.btn.btn-red.hover input,
+.btn.btn-red.active span,
+.btn.btn-red.active input {
+  background-color: transparent;
+  color: #d34d5e;
+}
+.btn.btn-red.btn-transparent:hover span,
+.btn.btn-red.btn-transparent:hover input,
+.btn.btn-red.btn-transparent:active span,
+.btn.btn-red.btn-transparent:active input,
+.btn.btn-red.btn-transparent.hover span,
+.btn.btn-red.btn-transparent.hover input,
+.btn.btn-red.btn-transparent.active span,
+.btn.btn-red.btn-transparent.active input {
+  background-color: #d34d5e;
+  color: #ffffff;
+}
+.btn.btn-yellow span,
+.btn.btn-yellow input {
+  background-color: #fed516;
+  border-color: #fed516;
+  color: #ffffff;
+}
+.btn.btn-yellow.btn-transparent span,
+.btn.btn-yellow.btn-transparent input {
+  background-color: transparent;
+  color: #fed516;
+}
+.btn.btn-yellow:hover span,
+.btn.btn-yellow:hover input,
+.btn.btn-yellow:active span,
+.btn.btn-yellow:active input,
+.btn.btn-yellow.hover span,
+.btn.btn-yellow.hover input,
+.btn.btn-yellow.active span,
+.btn.btn-yellow.active input {
+  background-color: transparent;
+  color: #fed516;
+}
+.btn.btn-yellow.btn-transparent:hover span,
+.btn.btn-yellow.btn-transparent:hover input,
+.btn.btn-yellow.btn-transparent:active span,
+.btn.btn-yellow.btn-transparent:active input,
+.btn.btn-yellow.btn-transparent.hover span,
+.btn.btn-yellow.btn-transparent.hover input,
+.btn.btn-yellow.btn-transparent.active span,
+.btn.btn-yellow.btn-transparent.active input {
+  background-color: #fed516;
+  color: #ffffff;
+}
+.btn.btn-gray span,
+.btn.btn-gray input {
+  background-color: #999999;
+  border-color: #999999;
+  color: #ffffff;
+}
+.btn.btn-gray.btn-transparent span,
+.btn.btn-gray.btn-transparent input {
+  background-color: transparent;
+  color: #999999;
+}
+.btn.btn-gray:hover span,
+.btn.btn-gray:hover input,
+.btn.btn-gray:active span,
+.btn.btn-gray:active input,
+.btn.btn-gray.hover span,
+.btn.btn-gray.hover input,
+.btn.btn-gray.active span,
+.btn.btn-gray.active input {
+  background-color: transparent;
+  color: #999999;
+}
+.btn.btn-gray.btn-transparent:hover span,
+.btn.btn-gray.btn-transparent:hover input,
+.btn.btn-gray.btn-transparent:active span,
+.btn.btn-gray.btn-transparent:active input,
+.btn.btn-gray.btn-transparent.hover span,
+.btn.btn-gray.btn-transparent.hover input,
+.btn.btn-gray.btn-transparent.active span,
+.btn.btn-gray.btn-transparent.active input {
+  background-color: #999999;
+  color: #ffffff;
+}
+.btn.btn-green span,
+.btn.btn-green input {
+  background-color: #299929;
+  border-color: #299929;
+  color: #ffffff;
+}
+.btn.btn-green.btn-transparent span,
+.btn.btn-green.btn-transparent input {
+  background-color: transparent;
+  color: #299929;
+}
+.btn.btn-green:hover span,
+.btn.btn-green:hover input,
+.btn.btn-green:active span,
+.btn.btn-green:active input,
+.btn.btn-green.hover span,
+.btn.btn-green.hover input,
+.btn.btn-green.active span,
+.btn.btn-green.active input {
+  background-color: transparent;
+  color: #299929;
+}
+.btn.btn-green.btn-transparent:hover span,
+.btn.btn-green.btn-transparent:hover input,
+.btn.btn-green.btn-transparent:active span,
+.btn.btn-green.btn-transparent:active input,
+.btn.btn-green.btn-transparent.hover span,
+.btn.btn-green.btn-transparent.hover input,
+.btn.btn-green.btn-transparent.active span,
+.btn.btn-green.btn-transparent.active input {
+  background-color: #299929;
+  color: #ffffff;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+#social-em:hover {
+     color: #fff;
+ }
+#social-ig:hover {
+     color: #B29C87;
+ }
+
+.copyright {
+    font-size: smaller;
+}
